@@ -6,32 +6,62 @@ const sliderImg = [
 
 ]
 
-const changeImg = document.getElementById("imge")
 
+const image = document.getElementById("imges");
 let count = 0
-const nextArrow=()=>{  
-  if(count >= sliderImg.length-1 ){
-     count = 0
-     changeImg.src= sliderImg[count]
-  }else{
-    count++
-    changeImg.src= sliderImg[count]
-   
-  }   
+
+
+
+const nextArrow =() =>{
+    if(count>=sliderImg.length-1) {
+        count=0
+        image.src= sliderImg[count]
+      }else{
+        count++
+        image.src= sliderImg[count]
+      }
 }
 
-
-const prevArrow = ()=>{
-  
-  console.log(count);
-  
+const prevArrow = () =>{
   if(count <=1){
-    const imgIndex = sliderImg[count]
     count = sliderImg.length-1
-    changeImg.src= imgIndex
+    image.src =sliderImg[count]
   }else{
     count--
-    const imgIndex = sliderImg[count]
-    changeImg.src= imgIndex
+    image.src =sliderImg[count]
   }
 }
+
+
+
+
+
+// const changeImg = document.getElementById("imge")
+
+// let count = 0
+// const nextArrow=()=>{  
+//   if(count >= sliderImg.length-1 ){
+//      count = 0
+//      changeImg.src= sliderImg[count]
+//   }else{
+//     count++
+//     changeImg.src= sliderImg[count]
+   
+//   }   
+// }
+
+
+// const prevArrow = ()=>{
+  
+//   console.log(count);
+  
+//   if(count <=1){
+//     const imgIndex = sliderImg[count]
+//     count = sliderImg.length-1
+//     changeImg.src= imgIndex
+//   }else{
+//     count--
+//     const imgIndex = sliderImg[count]
+//     changeImg.src= imgIndex
+//   }
+// }
