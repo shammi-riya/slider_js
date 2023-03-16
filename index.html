@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <!-- font wassam cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  .rightArrow{
+    position: absolute; 
+    top: 45%;
+    right: 94% ;
+    height:35px;
+     width:35px; 
+     border-radius: 50%;
+     background-color: red ;
+     color: #ede5e5;
+   text-align: center;
+   line-height: 35px;
+  }
+  .leftArrow{
+    position: absolute; 
+    top: 45%;
+    left: 94% ;
+    height:35px;
+     width:35px; 
+     border-radius: 50%;
+     background-color: red ;
+     color: #ede5e5;
+     text-align: center;
+     line-height: 35px;
+  }
+</style>
+<body>
+  
+
+    <section style="margin: 0 auto; height: 700px; width:700px;">
+        
+        <div style="position: relative;">
+            <img id="imge" src='images/violet-flower.jpg' height="100%" width="100%">
+            <div>
+                 <i onclick="prevArrow()"  class="fa-solid fa-arrow-left  rightArrow"></i>
+                 <i onclick="nextArrow()" class="fa-solid fa-arrow-right leftArrow "></i> 
+            </div>
+        </div>
+    </section>
+   
+   
+
+  
+   
+   <script src="./js/slider.js"></script>
+</body>
+</html>
